@@ -11,17 +11,17 @@
 	<meta property="og:url" content="https://godotengine.org/showcase/">
 	<meta name="twitter:site" content="@godotengine">
 
-	<meta property="og:title" content="Godot Engine - Showcase">
+	<meta property="og:title" content="Showcase - Godot Engine">
 	<meta property="og:description" content="Games made with the Godot Engine.">
-	<meta property="og:image" content="https://godotengine.org/assets/og_image.png">
+	<meta property="og:image" content="https://godotengine.org/assets/share-image.jpg">
 	<meta property="og:type" content="website">
 	<meta name="twitter:card" content="summary_large_image">
-	<title>Godot Engine - Showcase</title>
+	<title>Showcase - Godot Engine</title>
 
 	<link rel="alternate" type="application/rss+xml" title="Godot News" href="/rss.xml">
 	<link rel="icon" href="/assets/favicon.png" sizes="any">
 	<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/main.css?106">
 	<link rel="stylesheet" href="/assets/css/tobii.min.css">
 	<link rel="preload" as="font" href="/assets/fonts/Montserrat-Bold.woff2" crossorigin>
 	<link rel="preload" as="font" href="/assets/fonts/Montserrat-ExtraBold.woff2" crossorigin>
@@ -38,15 +38,15 @@
 				<img class="nav-logo dark-logo" src="/assets/logo_dark.svg" width="136" height="48" alt="Godot Engine">
 			</a>
 			<label for="nav_toggle_cb" id="nav_toggle_btn">
-				<img src="/assets/hamburger.svg" width="24" height="24" alt="">
+				<img src="/assets/icons/hamburger.svg" width="24" height="24" alt="Main menu">
 			</label>
 		</div>
 
 		<nav id="nav">
 			<ul class="left">
-				<li><a href="/showcase">Showcase</a></li>
+				<li><a href="/features">Features</a></li>
 				<div class="only-on-mobile" style="width: 100%">
-					<li><a href="/features">Features</a></li>
+					<li><a href="/showcase">Showcase</a></li>
 				</div>
 				<li><a href="/blog">Blog</a></li>
 				<li><a href="/community">Community</a></li>
@@ -87,31 +87,41 @@
 		Every year, we make a series of videos highlighting the best games made with Godot. Here are the latest ones:
 	</p>
 
-	<section class="flex grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))">
-		<article>
-			<div class="showcase-card video">
-				<a href="https://www.youtube.com/watch?v=UAS_pUTFA7o" target="_blank">
-					<img src="/assets/showcase/desktop-showcase.jpg" alt="Showreel: 2022 Godot Desktop Games">
-				</a>
-			</div>
-		</article>
+	<style>
+	.showreel-video img {
+		max-width: 100%;
+		background-color: var(--card-background-color);
+		box-shadow: 0 5px 10px -3px #00000078;
+		border-radius: 7px;
+		display: block;
+	}
+</style>
 
-		<article>
-			<div class="showcase-card video">
-				<a href="https://www.youtube.com/watch?v=xF3QiQfQxeQ" target="_blank">
-					<img src="/assets/showcase/mobile-showcase.jpg" alt="Showreel: 2022 Godot Mobile Games">
-				</a>
-			</div>
-		</article>
+<section class="flex grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))">
+	<article>
+		<div class="showreel-video">
+			<a href="https://www.youtube.com/watch?v=UAS_pUTFA7o" target="_blank">
+				<img src="/assets/showcase/desktop-showcase.jpg" alt="Showreel: 2022 Godot Desktop Games">
+			</a>
+		</div>
+	</article>
 
-		<article>
-			<div class="showcase-card video">
-				<a href="https://www.youtube.com/watch?v=9kKp0oguzr8" target="_blank">
-					<img src="/assets/showcase/apps-showcase.jpg" alt="Showreel: 2022 Godot Apps &amp; Tools">
-				</a>
-			</div>
-		</article>
-	</section>
+	<article>
+		<div class="showreel-video">
+			<a href="https://www.youtube.com/watch?v=xF3QiQfQxeQ" target="_blank">
+				<img src="/assets/showcase/mobile-showcase.jpg" alt="Showreel: 2022 Godot Mobile Games">
+			</a>
+		</div>
+	</article>
+
+	<article>
+		<div class="showreel-video">
+			<a href="https://www.youtube.com/watch?v=9kKp0oguzr8" target="_blank">
+				<img src="/assets/showcase/apps-showcase.jpg" alt="Showreel: 2022 Godot Apps &amp; Tools">
+			</a>
+		</div>
+	</article>
+</section>
 
 	<style>
 		.showcase-card h3 {
@@ -173,14 +183,6 @@
 		.showcase-card .no-capsule h3 {
 			text-shadow: 0 4px 5px black;
 		}
-
-		.showcase-card.video img {
-			max-width: 100%;
-			background-color: var(--card-background-color);
-			box-shadow: 0 5px 10px -3px #00000078;
-			border-radius: 7px;
-			display: block;
-		}
 	</style>
 
 	<!-- Filter will go here -->
@@ -191,7 +193,210 @@
 		
 		
 		
+		<a href="/showcase/tail-quest/" style="text-decoration: none;">
+			<article class="showcase-card">
+				
+				<img class="thumbnail" src="/assets/showcase/tail-quest-header.jpg" alt="TailQuest Defense" loading="lazy">
+				
+				<div class="showcase-card-caption">
+					<div class="showcase-card-icons">
+						
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+							height="24">
+						
+
+						
+
+						
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+							height="24">
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+					</div>
+					<div class="showcase-card-authors">
+						<p>Kivano Games</p>
+					</div>
+				</div>
+			</article>
+		</a>
 		
+		
+		
+		<a href="/showcase/cassette-beasts/" style="text-decoration: none;">
+			<article class="showcase-card">
+				
+				<img class="thumbnail" src="/assets/showcase/cassette-beasts-header.jpg" alt="Cassette Beasts" loading="lazy">
+				
+				<div class="showcase-card-caption">
+					<div class="showcase-card-icons">
+						
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+							height="24">
+						
+
+						
+
+						
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+							height="24">
+						
+
+						
+						<img src="/assets/images/platforms/switch.svg" alt="Nintendo Switch" title="Switch" style="margin: 0 0.125rem"
+							width="24" height="24">
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+						<img src="/assets/images/platforms/xbox.svg" alt="Xbox" title="Xbox" style="margin: 0 0.125rem" width="24" height="24">
+						
+					</div>
+					<div class="showcase-card-authors">
+						<p>Bytten Studio</p>
+					</div>
+				</div>
+			</article>
+		</a>
+		
+		
+		
+		<a href="/showcase/lumencraft/" style="text-decoration: none;">
+			<article class="showcase-card">
+				
+				<img class="thumbnail" src="/assets/showcase/lumencraft-header.jpg" alt="Lumencraft" loading="lazy">
+				
+				<div class="showcase-card-caption">
+					<div class="showcase-card-icons">
+						
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+							height="24">
+						
+
+						
+						<img src="/assets/images/platforms/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
+						
+
+						
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+							height="24">
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+					</div>
+					<div class="showcase-card-authors">
+						<p>2Dynamic Games</p>
+					</div>
+				</div>
+			</article>
+		</a>
+		
+		
+		
+		
+		
+		
+		
+		<a href="/showcase/madness-endless/" style="text-decoration: none;">
+			<article class="showcase-card">
+				
+				<img class="thumbnail" src="/assets/showcase/madness-endless-header.png" alt="Madness/Endless" loading="lazy">
+				
+				<div class="showcase-card-caption">
+					<div class="showcase-card-icons">
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+						<img src="/assets/images/platforms/android.svg" alt="Android" title="Android" style="margin: 0 0.125rem" width="24"
+							height="24">
+						
+
+						
+						<img src="/assets/images/platforms/ios.svg" alt="iOS" title="iOS" style="margin: 0 0.125rem" width="24" height="24">
+						
+
+						
+
+						
+					</div>
+					<div class="showcase-card-authors">
+						<p>Poke the Ant</p>
+					</div>
+				</div>
+			</article>
+		</a>
+		
+		
+		
+		<a href="/showcase/a-most-extraordinary-gnome/" style="text-decoration: none;">
+			<article class="showcase-card">
+				
+				<img class="thumbnail" src="/assets/showcase/gnome-header.jpg" alt="A Most Extraordinary Gnome" loading="lazy">
+				
+				<div class="showcase-card-caption">
+					<div class="showcase-card-icons">
+						
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+							height="24">
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+
+						
+					</div>
+					<div class="showcase-card-authors">
+						<p>Save Sloth Studios</p>
+					</div>
+				</div>
+			</article>
+		</a>
 		
 		
 		
@@ -203,16 +408,16 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
-						<img src="/assets/icons/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
+						<img src="/assets/images/platforms/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -245,16 +450,16 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
-						<img src="/assets/icons/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
+						<img src="/assets/images/platforms/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -287,7 +492,7 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -324,16 +529,16 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
-						<img src="/assets/icons/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
+						<img src="/assets/images/platforms/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -370,14 +575,14 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -410,16 +615,16 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
-						<img src="/assets/icons/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
+						<img src="/assets/images/platforms/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -454,16 +659,16 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
-						<img src="/assets/icons/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
+						<img src="/assets/images/platforms/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -496,21 +701,21 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
-						<img src="/assets/icons/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
+						<img src="/assets/images/platforms/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
-						<img src="/assets/icons/switch.svg" alt="Nintendo Switch" title="Switch" style="margin: 0 0.125rem"
+						<img src="/assets/images/platforms/switch.svg" alt="Nintendo Switch" title="Switch" style="margin: 0 0.125rem"
 							width="24" height="24">
 						
 
@@ -523,7 +728,7 @@
 						
 
 						
-						<img src="/assets/icons/xbox.svg" alt="Xbox" title="Xbox" style="margin: 0 0.125rem" width="24" height="24">
+						<img src="/assets/images/platforms/xbox.svg" alt="Xbox" title="Xbox" style="margin: 0 0.125rem" width="24" height="24">
 						
 					</div>
 					<div class="showcase-card-authors">
@@ -543,21 +748,21 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
-						<img src="/assets/icons/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
+						<img src="/assets/images/platforms/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
-						<img src="/assets/icons/switch.svg" alt="Nintendo Switch" title="Switch" style="margin: 0 0.125rem"
+						<img src="/assets/images/platforms/switch.svg" alt="Nintendo Switch" title="Switch" style="margin: 0 0.125rem"
 							width="24" height="24">
 						
 
@@ -588,16 +793,16 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
-						<img src="/assets/icons/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
+						<img src="/assets/images/platforms/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -628,8 +833,6 @@
 		
 		
 		
-		
-		
 		<a href="/showcase/cruelty-squad/" style="text-decoration: none;">
 			<article class="showcase-card">
 				
@@ -638,7 +841,7 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -675,7 +878,7 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -712,21 +915,21 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
-						<img src="/assets/icons/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
+						<img src="/assets/images/platforms/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
-						<img src="/assets/icons/switch.svg" alt="Nintendo Switch" title="Switch" style="margin: 0 0.125rem"
+						<img src="/assets/images/platforms/switch.svg" alt="Nintendo Switch" title="Switch" style="margin: 0 0.125rem"
 							width="24" height="24">
 						
 
@@ -759,14 +962,14 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -799,14 +1002,14 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -839,14 +1042,14 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -883,16 +1086,16 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
-						<img src="/assets/icons/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
+						<img src="/assets/images/platforms/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -931,16 +1134,16 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
-						<img src="/assets/icons/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
+						<img src="/assets/images/platforms/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -973,14 +1176,14 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -1048,6 +1251,14 @@
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
 		<a href="/showcase/rpg-in-a-box/" style="text-decoration: none;">
 			<article class="showcase-card">
 				
@@ -1056,16 +1267,16 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
-						<img src="/assets/icons/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
+						<img src="/assets/images/platforms/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -1114,16 +1325,16 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
-						<img src="/assets/icons/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
+						<img src="/assets/images/platforms/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -1160,14 +1371,14 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -1204,23 +1415,23 @@
 				<div class="showcase-card-caption">
 					<div class="showcase-card-icons">
 						
-						<img src="/assets/icons/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/windows.svg" alt="Windows" title="Windows" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
-						<img src="/assets/icons/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
+						<img src="/assets/images/platforms/macos.svg" alt="Mac" title="Mac" style="margin: 0 0.125rem" width="24" height="24">
 						
 
 						
-						<img src="/assets/icons/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/linux.svg" alt="Linux" title="Linux" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
 						
 
 						
-						<img src="/assets/icons/html5.svg" alt="HTML5" title="HTML5" style="margin: 0 0.125rem" width="24"
+						<img src="/assets/images/platforms/web.svg" alt="HTML5" title="HTML5" style="margin: 0 0.125rem" width="24"
 							height="24">
 						
 
@@ -1248,6 +1459,12 @@
 
 	<h2 class="title">Coming soon</h2>
 	<section class="flex grid showcase-cards" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))">
+		
+		
+		
+		
+		
+		
 		
 		
 		
@@ -1280,6 +1497,10 @@
 				</div>
 			</article>
 		</a>
+		
+		
+		
+		
 		
 		
 		
@@ -1354,9 +1575,7 @@
 		<a href="/showcase/until-then/" style="text-decoration: none;">
 			<article class="showcase-card">
 				
-				<div class="no-capsule" style="background-image: url(/assets/showcase/until-then.png)">
-					<h3>Until Then</h3>
-				</div>
+				<img class="thumbnail" src="/assets/showcase/until-then-header.jpg" alt="Until Then" loading="lazy">
 				
 				<div class="showcase-card-caption">
 					<div></div>
@@ -1378,22 +1597,6 @@
 					<div></div>
 					<div class="showcase-card-authors">
 						<p>carrotcake.studio</p>
-					</div>
-				</div>
-			</article>
-		</a>
-		
-		
-		
-		<a href="/showcase/tail-quest/" style="text-decoration: none;">
-			<article class="showcase-card">
-				
-				<img class="thumbnail" src="/assets/showcase/tail-quest-header.jpg" alt="TailQuest: Defense" loading="lazy">
-				
-				<div class="showcase-card-caption">
-					<div></div>
-					<div class="showcase-card-authors">
-						<p>Kivano Games</p>
 					</div>
 				</div>
 			</article>
@@ -1471,7 +1674,7 @@
 </main>
 
 <footer>
-	<div class="container flex">
+	<div class="container flex footer-container">
 		<div id="copyright">
 			<p>
 				© 2007-2023 Juan Linietsky, Ariel Manzur and <a
@@ -1518,9 +1721,12 @@
 		</div>
 		<div id="social" class="dark-desaturate">
 			<h4 class="text-right"><a href="/contact">Contact us</a></h4>
-			<div class="flex justify-space-between">
+			<div class="flex justify-space-between" style="gap: 3px;">
 				<a href="https://github.com/godotengine" target="_blank" rel="noopener">
 					<img src="/assets/footer/github_logo.svg" width="32" height="32" alt="GitHub">
+				</a>
+				<a href="https://mastodon.gamedev.place/@godotengine" target="_blank" rel="noopener">
+					<img src="/assets/footer/mastodon_logo.svg" width="32" height="32" alt="Mastodon">
 				</a>
 				<a href="https://twitter.com/godotengine" target="_blank" rel="noopener">
 					<img src="/assets/footer/twitter_logo.svg" width="32" height="32" alt="Twitter">
@@ -1552,33 +1758,30 @@
 			hljs.highlightBlock(block);
 		});
 
-		document.querySelectorAll('.content-article img').forEach((articleImg) => {
-			// Add lightbox elements in blog articles for Tobii.
-			const lightbox = document.createElement('a');
-			lightbox.href = articleImg.src;
-			lightbox.classList.add('lightbox');
-			lightbox.dataset.group = 'article';
-			articleImg.parentNode.appendChild(lightbox);
-			lightbox.appendChild(articleImg);
-		});
-
 		// Initialize lightbox.
 		new Tobii({
 			zoom: false,
 		});
-	});
 
-	// Update any download link to point to identified user's OS.
-	const links = document.querySelectorAll('.set-os-download-url');
-	for (let i = 0; i < links.length; i++) {
-		const link = links[i];
-		link.href = "/download/windows";
-		if (navigator.platform.indexOf('Mac') !== -1) {
-			link.href = "/download/macos";
-		} else if (navigator.platform.indexOf('Linux') !== -1) {
-			link.href = "/download/linux";
+		// Update any download link to point to identified user's OS.
+		const links = document.querySelectorAll('.set-os-download-url');
+		for (let i = 0; i < links.length; i++) {
+			const link = links[i];
+			let link_slug = 'download';
+			if ('version' in link.dataset && link.dataset['version'] === '3') {
+				link_slug = 'download/3.x';
+			}
+
+			let link_platform = 'windows';
+			if (navigator.platform.indexOf('Mac') !== -1) {
+				link_platform = 'macos';
+			} else if (navigator.platform.indexOf('Linux') !== -1) {
+				link_platform = 'linux';
+			}
+
+			link.href = `/${link_slug}/${link_platform}`;
 		}
-	}
+	});
 </script>
 
 
